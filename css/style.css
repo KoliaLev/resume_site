@@ -66,5 +66,73 @@
 
 body {
   font-family: "Acrom";
-  background-color: var(--c-dark-blue);
+  box-sizing: border-box;
+}
+
+/* FRONT PAGE */
+
+.front-page {
+  width: 320px;
+  background-color: var(--c-dark);
+  padding: 30px 10px 55px 10px;
+  box-sizing: border-box;
+}
+
+.front-page-name {
+  color: var(--txt-c-accent);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.front-page-profession {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  text-align: center;
+}
+
+.front-page-description {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+  text-align: center;
+}
+
+.navigatoin {
+  width: 100%;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.hire-my-btn {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  width: fit-content;
+
+  letter-spacing: 0.05em;
+  color: var(--txt-c-accent);
+  text-decoration: none;
+}
+
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+  background-color: var(--c-accent);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mobile-menu i {
+  color: var(--txt-c-light);
+  width: 10px;
+  height: 10px;
 }
