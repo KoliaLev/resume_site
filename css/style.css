@@ -551,3 +551,27 @@ body {
   color: var(--txt-c-light);
   margin: 20px 0 30px 0;
 }
+
+.calculator-form {
+  background-color: var(--c-light);
+  padding: 30px 25px;
+}
+.calculator-form-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--txt-c-dark);
+  margin-bottom: 20px;
+}
+.calculator-form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.calculator-form-select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--c-grey-light);
+  padding: 5px 0 17px 0;
+}
