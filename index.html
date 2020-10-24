@@ -287,18 +287,88 @@
 
           <div class="calculator-form-input">
             <label for="" class="calculator-form-title">Personal account and shopping cart:</label>
-            <label for="calculator-input-card-yes">Yes</label>
-            <input type="radio" class="calculator-form-input" id="calculator-input-card-yes" />
-            <label for="calculator-input-card-no">No</label>
-            <input type="radio" class="calculator-form-input" id="calculator-input-card-no" />
+
+            <div class="calculator-form-input-radio-container">
+              <label for="calculator-input-card-yes" class="calculator-form-input-label">
+                <input
+                  type="radio"
+                  name="account-and-cart"
+                  class="calculator-form-input-field"
+                  id="calculator-input-card-yes"
+                />
+                Yes</label
+              >
+
+              <label for="calculator-input-card-no" class="calculator-form-input-label">
+                <input
+                  type="radio"
+                  name="account-and-cart"
+                  class="calculator-form-input-field"
+                  id="calculator-input-card-no"
+                />
+                No</label
+              >
+            </div>
           </div>
+
           <div class="calculator-form-input">
             <label for="" class="calculator-form-title">Requests reception on your email:</label>
-            <input type="radio" class="calculator-form-input" id="calculator-input-email-yes" />
-            <input type="radio" class="calculator-form-input" id="calculator-input-email-no" />
+
+            <div class="calculator-form-input-radio-container">
+              <label for="calculator-input-card-yes" class="calculator-form-input-label">
+                <input
+                  type="radio"
+                  name="requests-email"
+                  class="calculator-form-input-field"
+                  id="calculator-input-email-yes"
+                />
+                Yes
+              </label>
+
+              <label for="calculator-input-card-no" class="calculator-form-input-label">
+                <input
+                  type="radio"
+                  name="requests-email"
+                  class="calculator-form-input-field"
+                  id="calculator-input-email-no"
+                />
+                No
+              </label>
+            </div>
           </div>
+          <div class="calculator-form-input">
+            <p class="calculator-form-total">Cost:</p>
+            <p class="calculator-form-total-cost">350$</p>
+          </div>
+
+          <input type="submit" value="Find out the cost  —" class="accent-btn" />
         </form>
       </div>
     </section>
+
+    <footer class="footer-container">
+      <p class="footer-my-name">Levkovich Nykolay</p>
+      <p class="footer-my-profession">Frontend Developer</p>
+      <a href="tel:+380632283096" class="footer-my-tel">+38(063) 228 30 96</a>
+      <a href="mailto:kolialevkovich@gmail.com" class="footer-my-email">
+        <p class="footer-my-email">Kolialevkovich@gmail.com</p>
+      </a>
+      <div>
+        <ul class="footer-link">
+          <li>
+            <a href="https://github.com/KoliaLev"><i class="fab fa-github-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/kolia.levkovich"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="https://t.me/Nykolay_L"><i class="fab fa-telegram"></i></a>
+          </li>
+          <li>
+            <a href="viber://chat?number=%2B380632283096"><i class="fab fa-viber"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

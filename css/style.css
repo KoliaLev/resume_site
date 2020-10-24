@@ -45,10 +45,8 @@
 @font-face {
   font-family: "Acrom";
   src: url("../fonts/acrom/Acrom-Bold.eot");
-  src: local("Acrom Bold"), local("Acrom-Bold"),
-    url("../fonts/acrom/Acrom-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/acrom/Acrom-Bold.woff") format("woff"),
-    url("../fonts/acrom/Acrom-Bold.ttf") format("truetype");
+  src: local("Acrom Bold"), local("Acrom-Bold"), url("../fonts/acrom/Acrom-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acrom/Acrom-Bold.woff") format("woff"), url("../fonts/acrom/Acrom-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -58,8 +56,7 @@
   src: url("../fonts/acrom/Acrom-Regular.eot");
   src: local("Acrom Regular"), local("Acrom-Regular"),
     url("../fonts/acrom/Acrom-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/acrom/Acrom-Regular.woff") format("woff"),
-    url("../fonts/acrom/Acrom-Regular.ttf") format("truetype");
+    url("../fonts/acrom/Acrom-Regular.woff") format("woff"), url("../fonts/acrom/Acrom-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -516,6 +513,9 @@ body {
   background: var(--c-dark);
 }
 
+.calculator .container {
+  padding-bottom: 75px;
+}
 .calculator-icon {
   width: 195px;
 }
@@ -574,4 +574,95 @@ body {
   border: none;
   border-bottom: 1px solid var(--c-grey-light);
   padding: 5px 0 17px 0;
+}
+
+.calculator-form-input-radio-container {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 20px;
+}
+
+.calculator-form-input-field {
+  outline-style: groove;
+  outline-width: 1px;
+  outline-color: var(--c-grey);
+  height: 20px;
+  width: 20px;
+}
+
+.calculator-form-input-label {
+  margin: 0 20px 0 10px;
+  color: var(--txt-c-dark);
+}
+
+.calculator-form-total {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--txt-c-dark);
+  margin: 0;
+}
+
+.calculator-form-total-cost {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+}
+
+/* FOOTER */
+
+.footer-container {
+  align-items: center;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.footer-my-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  margin: 0;
+  color: var(--txt-c-dark);
+}
+
+.footer-my-profession {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  margin: 0 0 20px 0;
+  color: var(--txt-c-dark);
+}
+
+.footer-my-tel {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--txt-c-dark);
+}
+
+.footer-my-email {
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--txt-c-dark);
+  margin: 15px 0 30px 0;
+}
+
+.footer-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.footer-link li {
+  margin: 0 15px;
+  display: inline;
+}
+.footer-link li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--txt-c-dark);
 }
