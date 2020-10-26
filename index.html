@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      .modal {
+        display: none;
+      }
+    </style>
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -104,7 +110,7 @@
         </li>
       </ul>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container container-left">
         <h3 class="section-title about-title">I code things from scratch_</h3>
         <p class="about-descr">
@@ -129,7 +135,7 @@
       </div>
     </section>
 
-    <section class="personal-projects">
+    <section class="personal-projects" id="personal-projects">
       <div class="container">
         <h3 class="section-title personal-projects-title">My personal _projects</h3>
 
@@ -249,7 +255,7 @@
       </div>
     </section>
 
-    <section class="calculator">
+    <section class="calculator" id="calculator">
       <div class="container">
         <h3 class="calculator-title section-title">Calculate_ the cost of a future project</h3>
         <p class="calculator-descr">
@@ -354,7 +360,7 @@
       </div>
     </section>
 
-    <footer class="footer-container">
+    <footer class="footer-container" id="footer-container">
       <p class="footer-my-name">Levkovich Nykolay</p>
       <p class="footer-my-profession">Frontend Developer</p>
       <a href="tel:+380632283096" class="footer-my-tel">+38(063) 228 30 96</a>
@@ -378,6 +384,40 @@
         </ul>
       </div>
     </footer>
+
+    <!-- MODALS -->
+
+    <div class="modals-wrapper">
+      <!-- Mobile-Menu -->
+
+      <div class="modal modal-mobile-menu">
+        <div class="modal-mobile-content">
+          <div class="container mobile-menu-container">
+            <i class="fas fa-times modal-close-bth mobile-menu-close-btn"></i>
+            <nav class="mobile-menu-items">
+              <a href="#about" class="mobile-menu-item">ABOUT</a>
+              <a href="#personal-projects" class="mobile-menu-item">PROJECTS</a>
+              <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+              <a href="#footer-container" class="mobile-menu-item">CONTACTS</a>
+            </nav>
+            <div class="mobile-menu-contacts">
+              <a href="tel:+380632283096" class="mobile-menu-my-tel">+38(063) 228 30 96</a>
+              <a href="mailto:kolialevkovich@gmail.com" class="mobile-menu-my-email">
+                <p class="mobile-menu-email">Kolialevkovich@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-active">
+        <div class="my-video-container">
+          <i class="fas fa-times modal-close-bth my-video-close-btn"></i>
+          <video class="my-video-contant" src="video.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
     <script src="js/choices.min.js"></script>
     <script src="js/calculator.js"></script>
   </body>
