@@ -23,7 +23,7 @@
         </a>
         <div class="navigation-part">
           <a href="" class="hire-my-btn"> — HIRE ME</a>
-          <a href="" class="mobile-menu">
+          <a href="" class="mobile-menu" id="mobile-menu-btn">
             <i class="fas fa-bars"></i>
           </a>
         </div>
@@ -38,7 +38,7 @@
       <button class="front-page-gallery-btn accent-btn">See my recent works —</button>
       <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto" />
       <p class="front-page-my-decr">About me in 2 minutes</p>
-      <button class="front-page-my-video-btn">
+      <button class="front-page-my-video-btn" id="my-video-btn">
         <i class="fas fa-play"></i>
         Play
       </button>
@@ -390,10 +390,10 @@
     <div class="modals-wrapper">
       <!-- Mobile-Menu -->
 
-      <div class="modal modal-mobile-menu">
+      <div class="modal modal-mobile-menu" id="mobile-menu">
         <div class="modal-mobile-content">
           <div class="container mobile-menu-container">
-            <i class="fas fa-times modal-close-bth mobile-menu-close-btn"></i>
+            <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
             <nav class="mobile-menu-items">
               <a href="#about" class="mobile-menu-item">ABOUT</a>
               <a href="#personal-projects" class="mobile-menu-item">PROJECTS</a>
@@ -410,15 +410,16 @@
         </div>
       </div>
 
-      <div class="modal modal-active">
+      <div class="modal modal-area-bgd" id="my-video-modal">
         <div class="my-video-container">
-          <i class="fas fa-times modal-close-bth my-video-close-btn"></i>
-          <video class="my-video-contant" src="video.mp4" controls></video>
+          <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+          <video class="my-video-contant modal-area-content" src="video.mp4" controls></video>
         </div>
       </div>
     </div>
 
     <script src="js/choices.min.js"></script>
     <script src="js/calculator.js"></script>
+    <script src="js/modals.js"></script>
   </body>
 </html>

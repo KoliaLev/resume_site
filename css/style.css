@@ -149,7 +149,7 @@ html {
   margin: 0;
 }
 
-.modal-close-bth {
+.modal-close-btn {
   font-size: 18px;
   position: absolute;
   color: var(--c-grey-blue);
@@ -199,6 +199,10 @@ html {
   text-decoration: none;
   color: var(--txt-c-dark);
   margin: 15px 0 5px 0;
+}
+
+.body-scroll-disable {
+  overflow: hidden;
 }
 
 /* MY VIDEO  */
