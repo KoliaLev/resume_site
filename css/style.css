@@ -224,6 +224,49 @@ html {
   padding: 10px 14px;
 }
 
+/* MY REQUEST */
+
+.modal-request-receirved {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.receirved-request-container {
+  background: var(--c-light);
+  width: 100%;
+  position: relative;
+}
+
+.receirved-request-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+  margin: 80px 0 20px 0;
+}
+
+.receirved-request-main-mess {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-dark);
+  margin: 0 30px 20px 30px;
+}
+
+.receirved-request-second-mess {
+  font-size: 17px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--txt-c-dark);
+  margin: 0 30px 80px 30px;
+}
+
 /* FRONT PAGE */
 
 .front-page {
