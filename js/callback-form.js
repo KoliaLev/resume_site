@@ -12,7 +12,7 @@ userPhone.addEventListener("click", function () {
 });
 
 userPhone.addEventListener("blur", function () {
-  if ((userPhone.value = "+380")) {
+  if (userPhone.value === "+380") {
     userPhone.value = "";
   }
 });
