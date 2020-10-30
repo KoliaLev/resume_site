@@ -759,6 +759,7 @@ html {
   text-transform: uppercase;
   color: var(--txt-c-light);
   margin: 0 0 30px 0;
+  width: 276px;
 }
 
 .calculator-descr span {
@@ -943,6 +944,10 @@ html {
 }
 
 @media only screen and (min-width: 640px) {
+  .container {
+    min-width: 640px;
+  }
+
   .front-page {
     padding: 30px 10px 70px 10px;
   }
@@ -1079,5 +1084,107 @@ html {
     font-size: 200px;
     line-height: 240px;
     top: 19px;
+  }
+
+  .callback-form-container {
+    padding: 75px 30px 80px 30px;
+  }
+
+  .callbsck-form-title {
+    font-size: 36px;
+    line-height: 43px;
+    width: 380px;
+  }
+
+  .callack-form-submit,
+  .callack-form-input,
+  .callback-form-descr {
+    width: 380px;
+    box-sizing: border-box;
+  }
+
+  .callack-form-input:last-child {
+    margin-bottom: 40px;
+  }
+
+  .calculator .container {
+    align-items: normal;
+    position: relative;
+    padding-bottom: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .calculator-title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 605px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .calculator-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    font-size: 36px;
+    line-height: 150%;
+  }
+
+  .calculator-icon {
+    position: absolute;
+    right: 10px;
+    top: 403px;
+    width: 344px;
+    z-index: 1;
+  }
+
+  .calculator-text {
+    text-align: left;
+    width: 330px;
+    margin-top: 10px;
+  }
+
+  .calculator-form {
+    z-index: 2;
+    padding: 60px 80px 70px 80px;
+  }
+
+  .calculator-form-title {
+    line-height: 150%;
+  }
+
+  .calculator-btn {
+    width: 100%;
+  }
+
+  .footer-container {
+    text-align: left;
+    align-items: flex-start;
+    position: relative;
+    padding: 40px 20px 60px 20px;
+  }
+
+  .footer-my-tel {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+
+  .footer-my-email {
+    position: absolute;
+    margin: 0;
+    top: 40px;
+    right: 10px;
+  }
+
+  .footer-link {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .footer-link li {
+    margin: 0 35px 0 0;
   }
 }
