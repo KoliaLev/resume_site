@@ -86,6 +86,7 @@ html {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -327,8 +328,21 @@ html {
 
 .front-page {
   background-color: var(--c-dark);
-  padding: 30px 10px 55px 10px;
+
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-main-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -480,7 +494,7 @@ html {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--txt-c-light);
-  width: 240px;
+  width: 175px;
   margin: 0 0 30px 0;
 }
 
@@ -946,9 +960,6 @@ html {
 @media only screen and (min-width: 640px) {
   .container {
     min-width: 640px;
-  }
-
-  .front-page {
     padding: 30px 10px 70px 10px;
   }
 
@@ -1186,5 +1197,96 @@ html {
 
   .footer-link li {
     margin: 0 35px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tablet-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: block;
+  }
+
+  .front-page {
+    padding: 0;
+  }
+
+  .container {
+    max-width: var(--desktop-lg);
+    padding: 45px 10px 70px 10px;
+  }
+
+  .front-page-wrapper {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
+  }
+
+  .front-page-profession {
+    font-size: 70px;
+    line-height: 84px;
+    width: 540px;
+    margin-left: -75px;
+  }
+
+  .front-page-experiens-scill {
+    order: 1;
+  }
+
+  .front-page-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 2;
+    z-index: 2;
+  }
+
+  .front-page-my-info {
+    order: 3;
+  }
+
+  .front-page-description {
+    text-align: left;
+    margin-top: 25px;
+  }
+
+  .front-page-laptop {
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .front-page-gallery-btn {
+    margin-top: 65px;
+    margin-bottom: 120px;
+  }
+
+  .front-page-my-decr {
+    text-align: right;
+  }
+
+  .front-page-name {
+    margin-top: 0;
+  }
+
+  .front-page-menu {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .front-page-menu li a {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-grey);
+    text-decoration: none;
+    margin: 0 17px 0 17px;
   }
 }

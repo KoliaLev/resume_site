@@ -17,109 +17,124 @@
   </head>
   <body>
     <section class="front-page">
-      <nav class="navigatoin">
-        <a href="" class="logo-link">
-          <img src="img/goit-logo.svg" alt="GOIT logo" />
-        </a>
-        <div class="navigation-part">
-          <a href="" class="hire-my-btn"> — HIRE ME</a>
-          <a href="" class="mobile-menu" id="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
+      <div class="container">
+        <nav class="navigatoin">
+          <a href="" class="logo-link">
+            <img src="img/goit-logo.svg" alt="GOIT logo" />
           </a>
-        </div>
-      </nav>
-      <h1 class="front-page-name">[Levkovich Nykolay]</h1>
-      <h2 class="front-page-profession">
-        <span class="profession-part-1">{Frontend}</span>
-        <span class="profession-part-2">_DEVELOPER</span>
-      </h2>
-      <p class="front-page-description">
-        / Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium web apps for
-        business
-      </p>
+          <ul class="front-page-menu desktop-element">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#personal-projects">PROJECTS</a></li>
+            <li><a href="#calculator">COST CALCULATOR</a></li>
+            <li><a href="#footer-container">CONTACTS</a></li>
+          </ul>
 
-      <button class="front-page-gallery-btn accent-btn">See my recent works —</button>
-      <div class="front-page-my-info">
-        <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto" />
-        <div class="front-page-about-me">
-          <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
-          <p class="front-page-my-decr tablet-element">
-            About me <br />
-            in 2 minutes
-          </p>
-          <button class="front-page-my-video-btn" id="my-video-btn">
-            <i class="fas fa-play"></i>
-            Play
-          </button>
+          <div class="navigation-part">
+            <a href="#callback-form" class="hire-my-btn"> — HIRE ME</a>
+            <a href="" class="mobile-menu" id="mobile-menu-btn">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="front-page-wrapper">
+          <div class="front-page-main-info">
+            <h1 class="front-page-name">[Levkovich Nykolay]</h1>
+            <h2 class="front-page-profession">
+              <span class="profession-part-1">{Frontend}</span>
+              <span class="profession-part-2">_DEVELOPER</span>
+            </h2>
+            <p class="front-page-description">
+              / Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium web
+              apps for business
+            </p>
+            <a href="#personal-projects" class="front-page-gallery-btn accent-btn">See my recent works —</a>
+          </div>
+
+          <div class="front-page-my-info">
+            <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto tablet-element" />
+            <div class="front-page-about-me">
+              <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
+              <p class="front-page-my-decr tablet-element desktop-element">
+                About me <br />
+                in 2 minutes
+              </p>
+              <button class="front-page-my-video-btn" id="my-video-btn">
+                <i class="fas fa-play"></i>
+                Play
+              </button>
+            </div>
+          </div>
+          <img src="img/laptop.svg" alt="laptop" class="front-page-laptop" />
+
+          <div class="experiens-wrapper">
+            <!-- <label for="front-page-experiens-scill" class="Experiens-title"> My Coding Skills & Experience </label> -->
+            <div class="Experiens-title">My Coding Skills & Experience</div>
+            <ul id="front-page-experiens-scill">
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                </ul>
+                Html
+              </li>
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                </ul>
+                CSS
+              </li>
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle"></i>
+                </ul>
+                JavaScript
+              </li>
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </ul>
+                React
+              </li>
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </ul>
+                Node
+              </li>
+              <li class="front-page-experiens-scill-list">
+                <ul class="front-scill-dot">
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle fa-circle-solid-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </ul>
+                React Native
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <img src="img/laptop.svg" alt="laptop" class="front-page-laptop" />
-
-      <!-- <h3 class="Experiens-title">My Coding Skills 
-        & Experience</h3> -->
-      <label for="front-page-experiens-scill" class="Experiens-title"> My Coding Skills & Experience </label>
-      <ul id="front-page-experiens-scill">
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-          </ul>
-          Html
-        </li>
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-          </ul>
-          CSS
-        </li>
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle"></i>
-          </ul>
-          JavaScript
-        </li>
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-          </ul>
-          React
-        </li>
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-          </ul>
-          Node
-        </li>
-        <li class="front-page-experiens-scill-list">
-          <ul class="front-scill-dot">
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle fa-circle-solid-accent"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-          </ul>
-          React Native
-        </li>
-      </ul>
     </section>
     <section class="about" id="about">
       <div class="container container-left">
@@ -255,7 +270,7 @@
       </div>
     </section>
 
-    <section class="callback-form">
+    <section class="callback-form" id="callback-form">
       <div class="container">
         <form action="" class="callback-form-container">
           <h3 class="callbsck-form-title">/Are you minding [a project?]</h3>
@@ -271,7 +286,7 @@
     <section class="calculator" id="calculator">
       <div class="container">
         <h3 class="calculator-title section-title mobile-element">Calculate_ the cost of a future project</h3>
-        <h3 class="calculator-title section-title tablet-element">
+        <h3 class="calculator-title section-title tablet-element desktop-element">
           Calculate_ <br />
           the cost of a <br />
           future project
@@ -285,7 +300,7 @@
           </p>
         </div>
 
-        <div class="tablet-element">
+        <div class="tablet-element desktop-element">
           <p class="calculator-descr">
             <span>This is an approximate</span>
             <span>calculation.</span>
