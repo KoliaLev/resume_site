@@ -121,6 +121,10 @@ html {
   display: none;
 }
 
+.mobile-element {
+  display: block;
+}
+
 /* MODALS */
 
 .modal {
@@ -1243,6 +1247,15 @@ html {
     align-items: flex-start;
     order: 2;
     z-index: 2;
+    position: relative;
+  }
+
+  .front-page-my-photo {
+    position: absolute;
+    width: 256px;
+    z-index: -1;
+    right: 29px;
+    bottom: 383px;
   }
 
   .front-page-my-info {
@@ -1288,5 +1301,44 @@ html {
     color: var(--txt-c-grey);
     text-decoration: none;
     margin: 0 17px 0 17px;
+  }
+
+  .front-page-menu li a:hover {
+    color: var(--txt-c-accent);
+  }
+
+  .team-project-item-wrapper,
+  .personal-project-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    width: calc(50% - 20px);
+  }
+
+  .team-project-item:nth-child(odd),
+  .personal-project-item:nth-child(odd) {
+    margin: 0 20px 40px 0;
+  }
+
+  .team-project-item:nth-child(even),
+  .personal-project-item:nth-child(even) {
+    margin: 0 0 40px 20px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 530px;
+  }
+
+  .team-projects-title-bgd {
+    font-size: 250px;
+    line-height: 300px;
+    top: 35px;
+    left: 274px;
   }
 }
