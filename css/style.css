@@ -1562,4 +1562,43 @@ html {
   .footer-link {
     width: auto;
   }
+
+  /* Modals */
+
+  .my-video-container {
+    width: 745px;
+    margin: 0 auto;
+  }
+
+  .receirved-request-container {
+    width: 605px;
+    margin: 0 auto;
+  }
+
+  .receirved-request-title {
+    line-height: 29px;
+  }
+  .receirved-request-main-mess {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .receirved-request-second-mess {
+    line-height: 25px;
+  }
+
+  .project-modal-container {
+    width: var(--desktop-lg);
+    padding: 95px 75px;
+  }
+
+  .project-modal-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .project-modal-text {
+    font-size: 17px;
+    line-height: 25px;
+  }
 }
