@@ -769,6 +769,11 @@ html {
   margin: 0 0 30px 0;
 }
 
+.callack-form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .callack-form-input {
   background: transparent;
   border: none;
@@ -778,6 +783,7 @@ html {
   color: var(--c-grey-blue);
   text-align: center;
   margin-bottom: 30px;
+  width: 260px;
 }
 
 .callack-form-input-error {
@@ -795,6 +801,12 @@ html {
 }
 .calculator-icon {
   width: 195px;
+}
+
+.calculator-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calculator-descr {
@@ -893,7 +905,6 @@ html {
 .footer-container {
   align-items: center;
   text-align: center;
-  padding: 50px 30px;
 }
 
 .footer-my-name {
@@ -931,15 +942,14 @@ html {
 .footer-link {
   list-style-type: none;
   margin: 0;
-  padding: 0 1%;
   justify-content: space-between;
+  width: 300px;
 }
 
-.footer-link li {
+.footer-link a {
   margin: 0 15px;
   display: inline;
-}
-.footer-link li a {
+  max-width: 30px;
   text-decoration: none;
   font-size: 30px;
   color: var(--txt-c-dark);
@@ -1001,10 +1011,6 @@ html {
 
   .tablet-element {
     display: block;
-  }
-
-  .desktop-element {
-    display: none;
   }
 
   .front-page-name {
@@ -1071,7 +1077,7 @@ html {
   .about-img-text {
     position: absolute;
     right: 22px;
-    top: 228px;
+    top: 99px;
     font-size: 200px;
     line-height: 240px;
   }
@@ -1098,6 +1104,10 @@ html {
     line-height: 43px;
     margin-bottom: 60px;
   }
+
+  /* .about-text {
+    width: 60%;
+  } */
 
   .about-text:last-child {
     width: 320px;
@@ -1158,6 +1168,10 @@ html {
     padding-right: 20px;
   }
 
+  .calculator-info {
+    align-items: flex-start;
+  }
+
   .calculator-title {
     font-size: 50px;
     line-height: 60px;
@@ -1202,29 +1216,25 @@ html {
     width: 100%;
   }
 
-  .footer-container {
+  .footer-container .container {
     text-align: left;
     align-items: flex-start;
     position: relative;
     padding: 40px 20px 60px 20px;
   }
 
-  .footer-my-tel {
+  .footer-my-contact {
+    text-align: end;
     position: absolute;
-    top: 40px;
     right: 20px;
   }
 
   .footer-my-email {
-    position: absolute;
     margin: 0;
-    top: 40px;
-    right: 10px;
   }
 
   .footer-link {
     padding: 0;
-    margin-top: 20px;
   }
 
   .footer-link li {
@@ -1233,6 +1243,10 @@ html {
 }
 
 @media only screen and (min-width: 1000px) {
+  .mobile-element {
+    display: none;
+  }
+
   .tablet-element {
     display: none;
   }
@@ -1368,5 +1382,184 @@ html {
     line-height: 300px;
     top: 35px;
     left: 274px;
+  }
+
+  .about-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 620px;
+    margin-top: 0;
+  }
+
+  .about-text {
+    width: 406px;
+  }
+  .about-text:last-child {
+    width: 388px;
+    margin: 0;
+  }
+
+  .about-content-wrapper {
+    position: relative;
+  }
+
+  .about .container {
+    flex-direction: row;
+    padding: 135px 10px;
+    justify-content: space-between;
+  }
+
+  .about-projects-bar {
+    background: var(--c-accent);
+    width: 159px;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 5px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+  }
+
+  .about-projects {
+    z-index: 2;
+  }
+
+  .about-projects-count {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 78px;
+    color: var(--txt-c-light);
+    margin: 0;
+  }
+
+  .about-projects-text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 135%;
+    color: var(--txt-c-dark);
+    text-transform: uppercase;
+    width: 125px;
+  }
+
+  .about-img-text {
+    font-size: 250px;
+    line-height: 300px;
+    right: -223px;
+    top: -23px;
+    z-index: 1;
+  }
+
+  .about-img {
+    width: 421px;
+    height: 455px;
+    left: -35px;
+  }
+
+  .callbsck-form-title {
+    width: 100%;
+  }
+
+  .callback-form-descr {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .callack-form-input-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .callack-form-input {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 30%;
+    max-width: 260px;
+  }
+
+  .callack-form-input:last-child {
+    margin-right: 0;
+  }
+
+  .callack-form-submit {
+    width: 260px;
+    padding: 15px 20px;
+  }
+
+  .calculator .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 150px 0px;
+  }
+
+  .calculator-info {
+    position: relative;
+  }
+
+  .calculator-icon {
+    position: absolute;
+    right: -60px;
+    top: 386px;
+    width: 344px;
+    z-index: 1;
+  }
+
+  .calculator-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .calculator-descr {
+    margin-bottom: 45px;
+    z-index: 2;
+  }
+
+  .calculator-descr p {
+    font-size: 36px;
+    line-height: 150%;
+  }
+
+  .calculator-text {
+    width: 350px;
+  }
+
+  .calculator-form {
+    width: 386px;
+    box-sizing: border-box;
+    padding: 40px 55px 60px 55px;
+  }
+
+  .footer-container .container {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+  }
+
+  .footer-my-contact {
+    position: static;
+    top: auto;
+    right: auto;
+    text-align: center;
+  }
+
+  .footer-my-contact p {
+    margin: 0;
+  }
+
+  .footer-my-profession {
+    margin-bottom: 0;
+  }
+
+  .footer-link {
+    width: auto;
   }
 }

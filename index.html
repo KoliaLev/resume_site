@@ -60,14 +60,11 @@
             <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto tablet-element" />
             <div class="front-page-about-me">
               <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
-              <p class="front-page-my-decr tablet-element">
+              <p class="front-page-my-decr tablet-element desktop-element">
                 About me <br />
                 in 2 minutes
               </p>
-              <p class="front-page-my-decr desktop-element">
-                About me <br />
-                in 2 minutes
-              </p>
+
               <button class="front-page-my-video-btn" id="my-video-btn">
                 <i class="fas fa-play"></i>
                 Play
@@ -77,7 +74,6 @@
           <img src="img/laptop.svg" alt="laptop" class="front-page-laptop" />
 
           <div class="experiens-wrapper">
-            <!-- <label for="front-page-experiens-scill" class="Experiens-title"> My Coding Skills & Experience </label> -->
             <div class="Experiens-title">My Coding Skills & Experience</div>
             <ul id="front-page-experiens-scill">
               <li class="front-page-experiens-scill-list">
@@ -147,26 +143,51 @@
     </section>
     <section class="about" id="about">
       <div class="container container-left">
-        <h3 class="section-title about-title">I code things from scratch_</h3>
-        <p class="about-descr">
-          <span>[and help to</span>
-          <span>create great web</span>
-          <span>apps]</span>
-        </p>
-        <div class="about-img-container">
-          <p class="about-img-text">
-            WEB
-            <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
+        <div class="about-content-wrapper">
+          <h3 class="section-title about-title">I code things from scratch_</h3>
+
+          <p class="about-descr mobile-element">
+            <span>[and help to</span>
+            <span>create great web</span>
+            <span>apps]</span>
+          </p>
+
+          <div class="tablet-element desktop-element">
+            <p class="about-descr">
+              <span>[and help to create</span>
+              <span>great web apps]</span>
+            </p>
+          </div>
+
+          <div class="about-img-container">
+            <p class="about-img-text">
+              WEB
+              <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
+            </p>
+          </div>
+          <p class="about-text mobile-element desktop-element">
+            / I will help you to create a high-performance Landing Page, functional corporate website for your business,
+            interactive web app for SaaS, startup, or other services.
+          </p>
+          <p class="about-text tablet-element">
+            / I will help you to create a<br />
+            high-performance Landing Page,<br />
+            functional corporate website for your<br />
+            business, interactive web app for<br />
+            SaaS, startup, or other services.
+          </p>
+          <p class="about-text">
+            / My specialization is front-end development — client side of the web. But I also have full-stack developer
+            experience.
           </p>
         </div>
-        <p class="about-text">
-          / I will help you to create a high-performance Landing Page, functional corporate website for your business,
-          interactive web app for SaaS, startup, or other services.
-        </p>
-        <p class="about-text">
-          / My specialization is front-end development — client side of the web. But I also have full-stack developer
-          experience.
-        </p>
+
+        <div class="about-projects desktop-element">
+          <div class="about-projects-bar">
+            <p class="about-projects-count">10+</p>
+          </div>
+          <p class="about-projects-text">completed projects</p>
+        </div>
       </div>
     </section>
 
@@ -290,9 +311,11 @@
         <form action="" class="callback-form-container">
           <h3 class="callbsck-form-title">/Are you minding [a project?]</h3>
           <p class="callback-form-descr">Leave a request to discuss the task and technical requirements</p>
-          <input type="text" class="callack-form-input" placeholder="Name" id="callack-form-input-name" />
-          <input type="email" class="callack-form-input" placeholder="Email" id="callack-form-input-email" />
-          <input type="tel" class="callack-form-input" placeholder="+380 () ___-__-__" id="callack-form-phone" />
+          <div class="callack-form-input-container">
+            <input type="text" class="callack-form-input" placeholder="Name" id="callack-form-input-name" />
+            <input type="email" class="callack-form-input" placeholder="Email" id="callack-form-input-email" />
+            <input type="tel" class="callack-form-input" placeholder="+380 () ___-__-__" id="callack-form-phone" />
+          </div>
           <input type="submit" class="callack-form-submit accent-btn" value="Discuss the project  —" />
         </form>
       </div>
@@ -300,32 +323,34 @@
 
     <section class="calculator" id="calculator">
       <div class="container">
-        <h3 class="calculator-title section-title mobile-element">Calculate_ the cost of a future project</h3>
-        <h3 class="calculator-title section-title tablet-element desktop-element">
-          Calculate_ <br />
-          the cost of a <br />
-          future project
-        </h3>
+        <div class="calculator-info">
+          <h3 class="calculator-title section-title mobile-element">Calculate_ the cost of a future project</h3>
+          <h3 class="calculator-title section-title tablet-element desktop-element">
+            Calculate_ <br />
+            the cost of a <br />
+            future project
+          </h3>
 
-        <div class="mobile-element">
-          <p class="calculator-descr">
-            <span>This is an</span>
-            <span class="calculator-descr-accent">approximate</span>
-            <span>calculation.</span>
+          <div class="mobile-element">
+            <p class="calculator-descr">
+              <span>This is an</span>
+              <span class="calculator-descr-accent">approximate</span>
+              <span>calculation.</span>
+            </p>
+          </div>
+
+          <div class="tablet-element desktop-element">
+            <p class="calculator-descr">
+              <span>This is an approximate</span>
+              <span>calculation.</span>
+            </p>
+          </div>
+
+          <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
+          <p class="calculator-text">
+            / The final cost depends on the technical requirements, terms, specifics of your project.
           </p>
         </div>
-
-        <div class="tablet-element desktop-element">
-          <p class="calculator-descr">
-            <span>This is an approximate</span>
-            <span>calculation.</span>
-          </p>
-        </div>
-
-        <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
-        <p class="calculator-text">
-          / The final cost depends on the technical requirements, terms, specifics of your project.
-        </p>
         <form action="" class="calculator-form">
           <div class="calculator-form-input">
             <label for="calculator-form-website-type" class="calculator-form-title"> What should be done: </label>
@@ -420,27 +445,27 @@
     </section>
 
     <footer class="footer-container" id="footer-container">
-      <p class="footer-my-name">Levkovich Nykolay</p>
-      <p class="footer-my-profession">Frontend Developer</p>
-      <a href="tel:+380632283096" class="footer-my-tel">+38(063) 228 30 96</a>
-      <a href="mailto:kolialevkovich@gmail.com" class="footer-my-email">
-        <p class="footer-my-email">Kolialevkovich@gmail.com</p>
-      </a>
-      <div>
-        <ul class="footer-link">
-          <li>
+      <div class="container">
+        <div class="footer-my-info">
+          <p class="footer-my-name">Levkovich Nykolay</p>
+          <p class="footer-my-profession">Frontend Developer</p>
+        </div>
+
+        <div class="footer-my-contact">
+          <p><a href="tel:+380632283096" class="footer-my-tel">+38(063) 228 30 96</a></p>
+          <p><a href="mailto:kolialevkovich@gmail.com" class="footer-my-email"> Kolialevkovich@gmail.com </a></p>
+        </div>
+        <div class="footer-link-list">
+          <div class="footer-link">
             <a href="https://github.com/KoliaLev"><i class="fab fa-github-square"></i></a>
-          </li>
-          <li>
+
             <a href="https://www.facebook.com/kolia.levkovich"><i class="fab fa-facebook-square"></i></a>
-          </li>
-          <li>
+
             <a href="https://t.me/Nykolay_L"><i class="fab fa-telegram"></i></a>
-          </li>
-          <li>
+
             <a href="viber://chat?number=%2B380632283096"><i class="fab fa-viber"></i></a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -477,7 +502,9 @@
         </div>
       </div>
 
-      <div class="modal modal-request-receirved" id="request-receirved">
+      <!-- request-receirved -->
+
+      <div class="modal modal-request-receirved modal-active" id="request-receirved">
         <div class="receirved-request-container">
           <i class="fas fa-times modal-close-btn"></i>
           <h3 class="receirved-request-title">{Thanks}</h3>
