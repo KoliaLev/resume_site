@@ -110,7 +110,7 @@ html {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: var(--animation-transition);  
+  transition: var(--animation-transition);
 }
 
 .accent-btn:hover {
@@ -448,6 +448,18 @@ html {
   text-decoration: none;
 }
 
+@keyframes backgroundColorAnimation {
+  from {
+    color: var(--txt-c-accent);
+  }
+  50% {
+    color: var(--txt-c-dark);
+  }
+  to {
+    color: var(--txt-c-accent);
+  }
+}
+
 .hire-my-btn {
   font-weight: 800;
   font-size: 15px;
@@ -456,6 +468,15 @@ html {
   color: var(--txt-c-accent);
   text-decoration: none;
   margin-right: 20px;
+  animation-name: backgroundColorAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.hire-my-btn:hover {
+  color: var(--txt-c-accent);
+
+  animation: none;
 }
 
 .mobile-menu {
