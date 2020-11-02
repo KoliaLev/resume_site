@@ -32,6 +32,8 @@
   /* animation */
   --animation-fast: 0.1s;
   --animation-slow: 0.3s;
+
+  --animation-transition: all 0.2s ease-in-out;
 }
 
 @font-face {
@@ -108,10 +110,15 @@ html {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  transition: var(--animation-transition);  
 }
+
 .accent-btn:hover {
-  -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  outline: 1px solid var(--c-accent);
+  background-color: transparent;
+  color: var(--txt-c-accent);
 }
 
 .container {
@@ -218,6 +225,12 @@ html {
   text-decoration: none;
   text-align: center;
   margin-bottom: 30px;
+  transition: var(--animation-transition);
+}
+
+.mobile-menu-item:hover {
+  color: var(--txt-c-accent);
+  font-size: 20px;
 }
 
 .mobile-menu-contacts {
@@ -373,6 +386,14 @@ html {
   align-items: center;
 }
 
+.logo-link {
+  transition: var(--animation-transition);
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+}
+
 .front-page-main-info {
   display: flex;
   flex-direction: column;
@@ -498,6 +519,13 @@ html {
   align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: var(--animation-transition);
+}
+
+.front-page-my-video-btn:hover {
+  background-color: var(--c-accent);
+  color: var(--txt-c-light);
+  outline: 1px solid var(--c-light);
 }
 
 .front-page-my-video-btn .fa-play {
@@ -929,6 +957,11 @@ html {
   line-height: 150%;
   text-decoration: none;
   color: var(--txt-c-dark);
+  transition: var(--animation-transition);
+}
+
+.footer-my-tel:hover {
+  color: var(--txt-c-accent);
 }
 
 .footer-my-email {
@@ -937,6 +970,11 @@ html {
   text-decoration: none;
   color: var(--txt-c-dark);
   margin: 15px 0 30px 0;
+  transition: var(--animation-transition);
+}
+
+.footer-my-email:hover {
+  color: var(--txt-c-accent);
 }
 
 .footer-link {
@@ -953,6 +991,14 @@ html {
   text-decoration: none;
   font-size: 30px;
   color: var(--txt-c-dark);
+}
+
+.link-sosial {
+  transition: var(--animation-transition);
+}
+
+.link-sosial:hover {
+  transform: scale(1.1);
 }
 
 /* MULTI SELECT */
@@ -1347,6 +1393,8 @@ html {
 
   .front-page-menu li a:hover {
     color: var(--txt-c-accent);
+    transition: var(--animation-transition);
+    font-size: 16px;
   }
 
   .team-project-item-wrapper,
@@ -1492,11 +1540,12 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 0px;
+    padding: 150px 10px;
   }
 
   .calculator-info {
     position: relative;
+    z-index: 2;
   }
 
   .calculator-icon {
@@ -1504,7 +1553,7 @@ html {
     right: -60px;
     top: 386px;
     width: 344px;
-    z-index: 1;
+    z-index: -1;
   }
 
   .calculator-title {

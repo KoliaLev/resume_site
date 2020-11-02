@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
   </head>
   <body>
     <section class="front-page">
@@ -41,7 +42,13 @@
 
         <div class="front-page-wrapper">
           <div class="front-page-main-info">
-            <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo desktop-element" />
+            <img
+              src="img/my-photo.jpg"
+              alt="my photo"
+              class="front-page-my-photo desktop-element"
+              data-aos="fade-down"
+              data-aos-delay="1500"
+            />
 
             <h1 class="front-page-name">[Levkovich Nykolay]</h1>
             <h2 class="front-page-profession">
@@ -55,7 +62,7 @@
             <a href="#personal-projects" class="front-page-gallery-btn accent-btn">See my recent works —</a>
           </div>
 
-          <div class="front-page-my-info">
+          <div class="front-page-my-info" data-aos="fade-left" data-aos-delay="1000">
             <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto mobile-element" />
             <img src="img/my-photo.jpg" alt="my foto" class="front-page-my-foto tablet-element" />
             <div class="front-page-about-me">
@@ -73,7 +80,7 @@
           </div>
           <img src="img/laptop.svg" alt="laptop" class="front-page-laptop" />
 
-          <div class="experiens-wrapper">
+          <div class="experiens-wrapper" data-aos="fade-right" data-aos-delay="500">
             <div class="Experiens-title">My Coding Skills & Experience</div>
             <ul id="front-page-experiens-scill">
               <li class="front-page-experiens-scill-list">
@@ -144,7 +151,9 @@
     <section class="about" id="about">
       <div class="container container-left">
         <div class="about-content-wrapper">
-          <h3 class="section-title about-title">I code things from scratch_</h3>
+          <h3 class="section-title about-title" data-aos="fade-right" data-aos-delay="500">
+            I code things from scratch_
+          </h3>
 
           <p class="about-descr mobile-element">
             <span>[and help to</span>
@@ -152,7 +161,7 @@
             <span>apps]</span>
           </p>
 
-          <div class="tablet-element desktop-element">
+          <div class="tablet-element desktop-element" data-aos="fade-right" data-aos-delay="1000">
             <p class="about-descr">
               <span>[and help to create</span>
               <span>great web apps]</span>
@@ -165,7 +174,7 @@
               <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
             </p>
           </div>
-          <p class="about-text mobile-element desktop-element">
+          <p class="about-text mobile-element desktop-element" data-aos="fade-right" data-aos-delay="1100">
             / I will help you to create a high-performance Landing Page, functional corporate website for your business,
             interactive web app for SaaS, startup, or other services.
           </p>
@@ -176,7 +185,7 @@
             business, interactive web app for<br />
             SaaS, startup, or other services.
           </p>
-          <p class="about-text">
+          <p class="about-text" data-aos="fade-right" data-aos-delay="1200">
             / My specialization is front-end development — client side of the web. But I also have full-stack developer
             experience.
           </p>
@@ -193,7 +202,9 @@
 
     <section class="personal-projects" id="personal-projects">
       <div class="container">
-        <h3 class="section-title personal-projects-title">My personal _projects</h3>
+        <h3 class="section-title personal-projects-title" data-aos="fade-right" data-aos-delay="500">
+          My personal _projects
+        </h3>
 
         <div class="personal-project-item-wrapper">
           <div class="personal-project-item">
@@ -268,7 +279,7 @@
     <section class="team-projects">
       <div class="container">
         <span class="team-projects-title-bgd">TEAM</span>
-        <h3 class="section-title team-projects-title">Teamwork _projects</h3>
+        <h3 class="section-title team-projects-title" data-aos="fade-right" data-aos-delay="500">Teamwork _projects</h3>
 
         <div class="team-project-item-wrapper">
           <div class="team-project-item">
@@ -309,21 +320,30 @@
     <section class="callback-form" id="callback-form">
       <div class="container">
         <form action="" class="callback-form-container">
-          <h3 class="callbsck-form-title">/Are you minding [a project?]</h3>
-          <p class="callback-form-descr">Leave a request to discuss the task and technical requirements</p>
+          <h3 class="callbsck-form-title" data-aos="fade-down" data-aos-delay="100">/Are you minding [a project?]</h3>
+          <p class="callback-form-descr" data-aos="fade-down" data-aos-delay="200">
+            Leave a request to discuss the task and technical requirements
+          </p>
           <div class="callack-form-input-container">
             <input type="text" class="callack-form-input" placeholder="Name" id="callack-form-input-name" />
             <input type="email" class="callack-form-input" placeholder="Email" id="callack-form-input-email" />
             <input type="tel" class="callack-form-input" placeholder="+380 () ___-__-__" id="callack-form-phone" />
           </div>
-          <input type="submit" class="callack-form-submit accent-btn" value="Discuss the project  —" />
+          <input
+            type="submit"
+            class="callack-form-submit accent-btn"
+            value="Discuss the project  —"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor-placement="top-center"
+          />
         </form>
       </div>
     </section>
 
     <section class="calculator" id="calculator">
       <div class="container">
-        <div class="calculator-info">
+        <div class="calculator-info" data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-center">
           <h3 class="calculator-title section-title mobile-element">Calculate_ the cost of a future project</h3>
           <h3 class="calculator-title section-title tablet-element desktop-element">
             Calculate_ <br />
@@ -351,7 +371,7 @@
             / The final cost depends on the technical requirements, terms, specifics of your project.
           </p>
         </div>
-        <form action="" class="calculator-form">
+        <form action="" class="calculator-form" data-aos="fade-left" data-aos-delay="300">
           <div class="calculator-form-input">
             <label for="calculator-form-website-type" class="calculator-form-title"> What should be done: </label>
             <select name="wesite-type" id="calculator-form-website-type" class="calculator-form-select">
@@ -457,13 +477,13 @@
         </div>
         <div class="footer-link-list">
           <div class="footer-link">
-            <a href="https://github.com/KoliaLev"><i class="fab fa-github-square"></i></a>
+            <a href="https://github.com/KoliaLev"><i class="fab fa-github-square link-sosial"></i></a>
 
-            <a href="https://www.facebook.com/kolia.levkovich"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.facebook.com/kolia.levkovich"><i class="fab fa-facebook-square link-sosial"></i></a>
 
-            <a href="https://t.me/Nykolay_L"><i class="fab fa-telegram"></i></a>
+            <a href="https://t.me/Nykolay_L"><i class="fab fa-telegram link-sosial"></i></a>
 
-            <a href="viber://chat?number=%2B380632283096"><i class="fab fa-viber"></i></a>
+            <a href="viber://chat?number=%2B380632283096"><i class="fab fa-viber link-sosial"></i></a>
           </div>
         </div>
       </div>
@@ -665,5 +685,7 @@
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
     <script src="js/callback-form.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
   </body>
 </html>
