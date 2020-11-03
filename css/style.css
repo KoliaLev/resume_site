@@ -739,6 +739,11 @@ html {
   margin-bottom: 30px;
 }
 
+.swiper-container {
+  width: 300px;
+  height: auto;
+}
+
 /* TEAM PROJECT */
 
 .team-projects .container {
@@ -1080,6 +1085,11 @@ html {
     display: block;
   }
 
+  .swiper-container {
+    width: 600px;
+    height: auto;
+  }
+
   .front-page-name {
     font-size: 36px;
     line-height: 43px;
@@ -1320,6 +1330,11 @@ html {
 
   .desktop-element {
     display: block;
+  }
+
+  .swiper-container {
+    width: 800px;
+    height: auto;
   }
 
   .front-page {
@@ -1659,7 +1674,7 @@ html {
 
   .project-modal-container {
     width: var(--desktop-lg);
-    padding: 95px 75px;
+    padding: 50px 75px;
   }
 
   .project-modal-title {
