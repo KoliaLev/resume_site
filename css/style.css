@@ -926,17 +926,50 @@ html {
   margin: 0 30px 0 20px;
 }
 
-.calculator-form-input-field {
-  outline-style: groove;
-  outline-width: 1px;
-  outline-color: var(--c-grey);
-  height: 20px;
-  width: 20px;
-}
-
 .calculator-form-input-label {
   margin: 0 20px 0 10px;
   color: var(--txt-c-dark);
+  cursor: pointer;
+}
+
+.calculator-form-input-field {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.calculator-form-input-radio-label {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #c2c8d3;
+  vertical-align: sub;
+}
+
+.calculator-form-input-field:checked + .calculator-form-input-radio-label::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  left: 45px;
+  top: 6641px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--c-accent);
+}
+
+.calculator-form-input-field:checked ~ .calculator-form-input-radio-title {
+  font-weight: 700;
+}
+
+.calculator-form-input-radio-title {
+  font-weight: 400;
 }
 
 .calculator-form-total {
